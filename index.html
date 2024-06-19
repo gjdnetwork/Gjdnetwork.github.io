@@ -5,40 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Jones</title>
     <style>
-        .search-container {
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 300px;
-}
-
-#searchForm {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-#searchInput {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
-  font-size: 16px;
-}
-
-#searchButton {
-  background-color: #007bff;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 0 4px 4px 0;
-  font-size: 16px;
-}
-
-#searchResults {
-  margin-top: 10px;
-}
         /* Reset dei margini e del padding per tutti gli elementi */
         * {
             margin: 0;
@@ -115,12 +81,49 @@
         .hero p {
             font-size: 1.4em;
         }
+
+        /* Stili per il form di ricerca */
+        .search-container {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        #searchForm {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        #searchInput {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+        }
+
+        #searchButton {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px 16px;
+            border-radius: 0 4px 4px 0;
+            font-size: 16px;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="top-header">
         <div class="container">
-            <a href="http://dev-gabriel-jones.pantheonsite.io/" class="region-link">sito di proprietà di GJDEV</a>
+            <a href="http://dev-gabriel-jones.pantheonsite.io/" class="region-link">Sito di proprietà di GJDEV</a>
         </div>
     </div>
     <header>
@@ -128,26 +131,25 @@
             <h1>Gabriel Jones</h1>
             <nav>
                 <ul>
-                    <li><a href="/" target="_blank">Home</a></li>
-                    <li><a href="/Curriculum/" target="_blank">| Curriculum</a></li>
-                    <li><a href="/mys/" target="_blank">| Crea il tuo sito</a></li>
-                    <li><a href="http://dev-gabriel-jones.pantheonsite.io/" target="_blank">| Gabriel Jones</a></li>
-                    <li><a href="https://github.com/gjd-central/" target="_blank">| github</a></li>
-                    <li><a href="/documenti/" target="_blank">| Documenti</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Curriculum/">| Curriculum</a></li>
+                    <li><a href="/mys/">| Crea il tuo sito</a></li>
+                    <li><a href="http://dev-gabriel-jones.pantheonsite.io/">| Gabriel Jones</a></li>
+                    <li><a href="https://github.com/gjd-central/">| GitHub</a></li>
+                    <li><a href="/documenti/">| Documenti</a></li>
                 </ul>
             </nav>
-                <div class = container>
-<div class="search-container">
-  <form id="searchForm">
-    <input type="text" id="searchInput" placeholder="Cerca...">
-    <button type="submit" id="searchButton">Cerca</button>
-  </form>
-  <div id="searchResults"></div>
-</div>
-    </div>
-
         </div>
     </header>
+    <div class="container">
+        <div class="search-container">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Cerca...">
+                <button type="submit" id="searchButton">Cerca</button>
+            </form>
+            <div id="searchResults"></div>
+        </div>
+    </div>
     <script src="https://gjd-central.github.io/379246/script.js"></script>
 </body>
 </html>
