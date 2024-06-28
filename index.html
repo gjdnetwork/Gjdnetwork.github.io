@@ -2,25 +2,150 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap Italia Base</title>
-    
-    <!-- Bootstrap Italia CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-italia/dist/css/bootstrap-italia.min.css" rel="stylesheet">
-    <!-- Bootstrap 4 CSS (for components not included in Bootstrap Italia) -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasparenza dei miei lavori</title>
+    <!-- Stili di Italia Bootstrap e Italia Design -->
+    <link rel="stylesheet" href="css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="css/italia.css">
+    <style>
+        /* Stili aggiuntivi */
+        body {
+            font-family: 'Titillium Web', Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 0px;
+        }
+
+        .nbody {
+            padding: 20px;
+        }
+
+        .documenti-table {
+            margin-top: 20px;
+        }
+        .documenti-table th,
+        .documenti-table td {
+            border: none !important;
+        }
+        .documenti-table th {
+            font-weight: normal;
+        }
+        .documenti-table a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Contenuto della pagina -->
-    <iframe src="content/header/index.html" width="100%" height="100%" frameborder="0"></iframe>
-    <iframe src="pagina_esterna.html" width="100%" height="400" frameborder="0"></iframe>
-    <iframe src="content/footer/index.html" width="100%" height="100%" frameborder="0"></iframe>
 
-    <!-- jQuery, Popper.js, Bootstrap 4 JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Italia JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="it-header-wrapper"> <div class="it-header-slim-wrapper"> <div class="container"> <div class="row"> <div class="col-12"> <div class="it-header-slim-wrapper-content"> <a class="d-none d-lg-block navbar-brand" href="https://gabrieljones.it/">Site from Gabriel Jones</a> <div class="nav-mobile"> <nav aria-label="Navigazione secondaria"> <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button" aria-expanded="false" aria-controls="menuC1"> <span>Gabriel Jones</span> <svg class="icon" aria-hidden="true"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg> </a> </nav> </div> <div class="it-access-top-wrapper"> <a class="btn btn-primary btn-sm" href="https://gabrieljones.it/wp-login.php/">Accedi</a> </div> </div> </div> </div> </div> </div> </div> <div class="it-nav-wrapper"> <div class="it-header-center-wrapper"> <div class="container"> <div class="row"> <div class="col-12"> <div class="it-header-center-content-wrapper"> <div class="it-brand-wrapper"> <a href="#"> <img class="icon" aria-hidden="true" src="https://www.gabrieljones.it/wp-content/uploads/2024/06/cropped-icona.png" /> <div class="it-brand-text"> <div class="it-brand-title">Gabriel Jones Docs</div> </div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="it-header-navbar-wrapper"> <div class="container"> <div class="row"> <div class="col-12"> <!--start nav--> <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale"> <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1"> <svg class="icon"> <use href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use> </svg> </button> <div class="navbar-collapsable" id="navC1" style="display: none;"> <div class="overlay" style="display: none;"></div> <div class="close-div"> <button class="btn close-menu" type="button"> <span class="visually-hidden">Nascondi la navigazione</span> <svg class="icon"> <use href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use> </svg> </button> </div> <div class="menu-wrapper"> <ul class="navbar-nav"> </div> </div> </div> </div> </li> </ul> </div> </div> </nav> </div> </div> </div> </div> </div> </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="nbody">
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h1>Trasparenza dei miei lavori</h1>
+                <p>Benvenuti nella mia pagina dedicata alla trasparenza dei miei lavori.</p>
+
+                <!-- Box "Documenti" -->
+                <div class="card mt-4">
+                    <div class="card-header bg-primary text-white">
+                        Documenti ufficiali
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered documenti-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nome documento</th>
+                                        <th>Tag</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="tag/comune/documentoID775_sviluppo_generale.pdf">documentoID775_sviluppo_generale</a></td>
+                                        <td>Comune</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="tag/comune/Estate-2024.pdf">Estate-2024</a></td>
+                                        <td>Comune</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="tag/comune/pj_88_docs.pdf">pj 88</a></td>
+                                        <td>Comune</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="tag/comune/Progetto_biblioteca_vigonovo (1).pdf">Progetto biblioteca vigonovo</a></td>
+                                        <td>Comune</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="tag/gjd/blog/1.pdf">Avvio ufficiale blog GJD</a></td>
+                                        <td>GJD blog Comunicato stampa</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="tag/gjd/blog/2.pdf">Onlygabbyme Annuncia il Lancio di una Nuova Serie!!!</a></td>
+                                        <td>Comunicato stampa</td>
+                                    </tr>
+<!---                                    <tr> --->
+<!---                                        <td><a href="#">Nome Documento 1</a></td> --->
+<!---                                        <td>Descrizione del Documento 1</td> --->
+<!---                                    </tr> --->
+                                    <tr>
+                                        <td><a href="tag/comune/Sviluppo ambientale per il comune.pdf">Sviluppo ambientale</a></td>
+                                        <td>Comune</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td><a href="https://www.gabrieljones.it/wp-content/uploads/2024/06/Politica-di-Utilizzo-dei-Siti-Web-per-il-Gruppo-GJDev.pdf">Regolamento ufficiale GJD</a></td>
+                                        <td>Regolamento</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><a href="https://dev-gabriel-jones.pantheonsite.io/wp-content/uploads/2024/04/Comunicato_stampa_2.pdf">Comunicato stampa 2</a></td>
+                                        <td>Comunicato stampa</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.gabrieljones.it/wp-content/uploads/2024/06/Fontanafredda-2.0.pdf">Fontanafredda 2.0</a></td>
+                                        <td>Comune</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- Script di Bootstrap Italia -->
+    <script src="https://italia.github.io/bootstrap-italia/docs/js/bootstrap-italia.bundle.min.js"></script>
 </body>
 </html>
