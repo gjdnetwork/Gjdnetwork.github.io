@@ -25,48 +25,23 @@
         <p id="error" class="error"></p>
     </div>
 
-<script>
-    // Function to get users from localStorage
-    function getUsers() {
-        const users = localStorage.getItem('users');
-        return users ? JSON.parse(users) : {};
-    }
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
 
-    // Function to save users to localStorage
-    function saveUsers(users) {
-        localStorage.setItem('users', JSON.stringify(users));
-    }
+            const validUsername = 'admin';  // Cambia questo con il tuo username desiderato
+            const validPassword = 'password123';  // Cambia questo con la tua password desiderata
 
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const username = document.getElementById('loginUsername').value;
-        const password = document.getElementById('loginPassword').value;
-        const users = getUsers();
-
-        if (users[username] && users[username] === password) {
-            localStorage.setItem('loggedIn', 'true');
-            window.location.href = 'dashboard.html';
-        } else {
-            document.getElementById('loginError').textContent = 'Username o password errati.';
-        }
-    });
-
-    document.getElementById('registerForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const username = document.getElementById('registerUsername').value;
-        const password = document.getElementById('registerPassword').value;
-        const users = getUsers();
-
-        if (users[username]) {
-            document.getElementById('registerError').textContent = 'Username già esistente.';
-        } else {
-            users[username] = password;
-            saveUsers(users);
-            document.getElementById('registerError').textContent = 'Registrazione completata. Puoi effettuare il login.';
-        }
-    });
-</script>
+            if (username === validUsername && password === validPassword) {
+                localStorage.setItem('loggedIn', 'true');
+                window.location.href = 'dashboard.html';
+            } else {
+                document.getElementById('error').textContent = 'Username o password errati.';
+            }
+        });
+    </script>
 </body>
 </html>
