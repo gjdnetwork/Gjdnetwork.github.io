@@ -147,46 +147,14 @@
 
 
 
-        <div class="container mt-5">
-        <div class="row" id="posts-container">
-            <!-- I post verranno inseriti qui tramite JavaScript -->
-        </div>
-    </div>
+<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="167943/"></script> <!-- end feedwind code -->
 
     
     <!-- Script di Bootstrap Italia -->
         <script src="https://unpkg.com/bootstrap-italia@latest/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script src="https://italia.github.io/bootstrap-italia/dist/js/bootstrap-italia.min.js"></script>
 
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('https://tuo-sito-wordpress.com/wp-json/wp/v2/posts')
-                .then(response => response.json())
-                .then(posts => {
-                    const postsContainer = document.getElementById('posts-container');
-                    posts.forEach(post => {
-                        // Crea la card per ogni post
-                        const postCard = `
-                            <div class="col-md-4 mb-4">
-                                <div class="it-card-wrapper">
-                                    <div class="it-card">
-                                        <div class="it-card-header">
-                                            <h5 class="it-card-title">${post.title.rendered}</h5>
-                                        </div>
-                                        <div class="it-card-body">
-                                            <p class="it-card-text">${post.excerpt.rendered}</p>
-                                            <a href="${post.link}" class="btn btn-primary">Leggi di più</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                        postsContainer.innerHTML += postCard;
-                    });
-                })
-                .catch(error => console.error('Errore nel recuperare i post:', error));
-        });
-    </script>
+<script async defer src='https://p3k.org/rss/main.js?align=initial&amp;boxFillColor=%23ffead2&amp;compact=false&amp;fontFace=10pt%20sans-serif&amp;frameColor=%23ffffff&amp;headless=false&amp;height=&amp;linkColor=%232c7395&amp;maxItems=7&amp;radius=5&amp;showXmlButton=true&amp;textColor=%2395412b&amp;titleBarColor=%2390a8b3&amp;titleBarTextColor=%23ffead2&amp;url=https%3A%2F%2Fwww.gabrieljones.it%2Ffeed%2F&amp;width='></script>
 
     
 </body>
