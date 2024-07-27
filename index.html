@@ -88,7 +88,22 @@
 
 
 
-<div style="text-align: center;"><p style="color: #1E90FF; display: inline-block; border-radius: 10px; position: relative; overflow: hidden; white-space: nowrap;"><span style="animation: highlight 4s linear forwards;">Questo è un testo blu al centro con animazione di evidenziatura.</span></p></div><style>@keyframes highlight { 0% { background-color: transparent; width: 0%; } 100% { background-color: #E0FFFF; width: 100%; } } p span { display: inline-block; padding: 0 5px; }</style>
+<div style="text-align: center; position: relative; display: inline-block; background-color: #E0FFFF; padding: 5px; border-radius: 10px;">
+  <p style="color: black; position: relative; margin: 0; padding: 0; display: inline;">
+    <span style="position: relative;">Che servizio cerchi?</span>
+    <span style="position: absolute; top: 0; left: 0; height: 100%; background-color: #1E90FF; z-index: -1; animation: highlight 4s linear forwards; width: 0; display: block; pointer-events: none;"></span>
+  </p>
+</div>
+<style>
+  @keyframes highlight {
+    0% { width: 0; left: 0; }
+    100% { width: 100%; left: 0; }
+  }
+  p {
+    position: relative;
+    overflow: hidden;
+  }
+</style>
 
 
 
